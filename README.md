@@ -1,1 +1,3 @@
-# HTML
+Veepumpade Ülevaade
+
+See projekt on veebipõhine lahendus, mis annab põhjaliku ülevaate erinevatest veepumpade tootjatest ja nende toodete tehnilistest spetsifikatsioonidest. Kasutajad saavad tutvuda juhtivate veepumbatootjatega ning võrrelda nende toodete omadusi, nagu võimsus ja rõhk. Veebileht sisaldab interaktiivseid elemente, sealhulgas videoesitlusi ja heli salvestusi, mis aitavad kasutajatel mõista veepumpade tööpõhimõtteid ning tehnilisi aspekte
