@@ -1,1 +1,1 @@
-# HTML
+See projekt on HTML-veebileht, mis pakub ülevaadet veepumpadest, nende erinevatest tüüpidest ja tööpõhimõtetest ning võimaldab kasutajatel võtta ühendust kontaktvormi kaudu. Veebileht kasutab mitmesuguseid HTML-elemente, et näidata nende kasutust praktilises kontekstis.
