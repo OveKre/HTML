@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veepumbad - erinevad tüübid ja tootjad">
+    <title>Veepumbad</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- See on kommentaar -->
+    <header>
+        <h1>Veepumbad</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Veepumpade kohta</a></li>
+                <li><a href="#manufacturers">Tootjad</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>Veepumbad</h2>
+            <article>
+                <h3>Veepumpade tööpõhimõtted</h3>
+                <p><strong>Veepump</strong> on seade, mida kasutatakse vee liigutamiseks erinevates süsteemides, nagu näiteks kodumajapidamised, põllumajandus ja tööstus. Veepumbad aitavad tõhusalt vett transportida ja jagada vajalikesse kohtadesse.</p>
+                <p>Veepumpade erinevaid tüüpe on <mark>tsentrifugaalpumbad, perifeersed pumbad</mark> ja <i>kolbpumbad</i>. Kõik need sobivad kasutamiseks erinevates tingimustes.</p>
+                <figure>
+                    <img src="waterpump.jpg" alt="Veepumba pilt">
+                    <figcaption>Veepump, mida kasutatakse koduses majapidamises</figcaption>
+                </figure>
+                <details>
+                    <summary>Loe veel veepumpade tööpõhimõtetest</summary>
+                    <p><code>Veepumbad</code> töötavad erinevate tehnoloogiate abil, mis sõltuvad nende kasutusalast ja soovitud tulemusest. Üks levinumaid tööpõhimõtteid on tsentrifugaalne liikumine, mille puhul kasutatakse tsentrifugaalratta pöörlemist.</p>
+                </details>
+                <blockquote cite="https://www.example.com">
+                    "Veepumbad on eluliselt tähtsad põllumajanduse ja tööstuse jaoks, tagades pideva veevoolu." 
+                    <cite>- Eesti Pumbatootjate Liit</cite>
+                </blockquote>
+                <canvas id="pumpCanvas" width="400" height="200">Teie brauser ei toeta kanvaasi elementi.</canvas>
+                <button type="button">Vajuta siia</button>
+                <!-- Parandatud <div> element -->
+                <div>
+                    <p>See on lisatud element, mis sisaldab olulist teavet.</p>
+                </div>
+                <!-- Parandatud <iframe> element -->
+                <iframe src="https://www.example.com" title="Näide Iframe'ist" width="300" height="200"></iframe>
+                <!-- Lisatud <hr> element -->
+                <hr>
+                <!-- Lisatud <b> element -->
+                <p>See on <b>paksus kirjas</b> tekst, mis rõhutab olulist teavet.</p>
+                <!-- Lisatud <sub> ja <sup> elemendid -->
+                <p>Keemiline valem veele on H<sub>2</sub>O ja E=mc<sup>2</sup> on kuulus valem.</p>
+                <!-- Lisatud <textarea> element -->
+                <form>
+                    <label for="comments">Kommentaarid:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50">
+Siia saate kirjutada oma kommentaarid...
+                    </textarea>
+                </form>
+            </article> <!-- Liigutasin </article> siia -->
+            <audio controls>
+                <source src="images/Helisalvestus.mp3" type="audio/mpeg">
+                Teie brauser ei toeta audio elementi.
+            </audio>
+        </section>
+    
+        <section id="manufacturers">
+            <h2>Veepumpade tootjad</h2>
+            <!-- Muudetud <ul> elemendist <ol> -->
+            <ol>
+                <li><a href="https://example.com/manufacturer1" target="_blank">Tootja 1</a></li>
+                <li><a href="https://example.com/manufacturer2" target="_blank">Tootja 2</a></li>
+                <li><a href="https://example.com/manufacturer3" target="_blank">Tootja 3</a></li>
+            </ol>
+            <picture>
+                <source srcset="waterpump-small.jpg" media="(max-width: 600px)">
+                <source srcset="waterpump-large.jpg" media="(min-width: 601px)">
+                <img src="images/waterpump.jpg" alt="Veepumba erinevad suurused">
+            </picture>
+            <form action="#">
+                <fieldset>
+                    <legend>Otsi veepumpasid</legend>
+                    <label for="pumpType">Pumba tüüp:</label>
+                    <select id="pumpType" name="pumpType">
+                        <optgroup label="Tsentrifugaalpumbad">
+                            <option value="t1">Tüüp 1</option>
+                            <option value="t2">Tüüp 2</option>
+                        </optgroup>
+                        <optgroup label="Kolbpumbad">
+                            <option value="k1">Kolbpump 1</option>
+                            <option value="k2">Kolbpump 2</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label for="pumpDate">Paigaldamise kuupäev:</label>
+                    <input type="date" id="pumpDate" name="pumpDate">
+                    <br>
+                    <label for="pumpQty">Pumba kogus:</label>
+                    <input type="number" id="pumpQty" name="pumpQty" min="1" max="10">
+                    <br>
+                    <!-- Lisatud <input type="checkbox"> ja <input type="radio"> -->
+                    <label for="expressDelivery">Ekspress kohaletoimetamine:</label>
+                    <input type="checkbox" id="expressDelivery" name="expressDelivery">
+                    <br>
+                    <label>Pumba värv:</label><br>
+                    <input type="radio" id="colorRed" name="pumpColor" value="red">
+                    <label for="colorRed">Punane</label><br>
+                    <input type="radio" id="colorBlue" name="pumpColor" value="blue">
+                    <label for="colorBlue">Sinine</label><br>
+                    <input type="submit" value="Otsi">
+                </fieldset>
+            </form>
+        </section>
+    
+        <section id="extra">
+            <h2>Lisateave</h2>
+            <table>
+                <caption>Veepumpade võrdlus</caption>
+                <colgroup>
+                    <col style="background-color: #f2f2f2">
+                    <col style="background-color: #ffffff">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Pumba tüüp</th>
+                        <th>Efektiivsus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tsentrifugaalpump</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td>Kolbpump</td>
+                        <td>80%</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Andmed on hinnangulised</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <p>Veepumpade kasutamisel on oluline järgida <abbr title="Rahvusvahelised Standardid">ISO</abbr> standardeid.</p>
+            <pre>
+Veepumba kasutusjuhend:
+1. Ühenda pump vooluvõrku
+2. Ava veekraan
+3. Kontrolli rõhku
+            </pre>
+            <p>Lisaks <ins>uued pumbad</ins> on saadaval meie poes. <del>Vana mudel on nüüd lõpetatud.</del></p>
+            <p>Kasuta <kbd>Ctrl</kbd> + <kbd>C</kbd> ja <kbd>Ctrl</kbd> + <kbd>V</kbd>, et kopeerida ja kleepida andmeid.</p>
+            <dialog id="infoDialog">
+                <p>See on dialoogiaken veepumpade kohta.</p>
+                <button type="button" onclick="this.parentElement.close()">Sulge</button>
+            </dialog>
+            <button type="button" onclick="document.getElementById('infoDialog').showModal()">Näita infot</button>
+            <map name="pumbaKaart">
+                <area shape="rect" coords="34,44,270,350" alt="Pump 1" href="#">
+                <area shape="circle" coords="337,300,44" alt="Pump 2" href="#">
+            </map>
+            <img src="waterpump.jpg" alt="Pumbakaart" usemap="#pumbaKaart">
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="blue" />
+            </svg>
+            <!-- Video sektsioon -->
+<section id="video">
+    <h2>Vaata meie veepumba tutvustust</h2>
+    <iframe 
+        src="https://www.youtube.com/embed/SxZRw9baktE" 
+        title="YouTube video player" 
+        width="560" 
+        height="315"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</section>
+
+            <template id="pumpTemplate">
+                <div class="pump">
+                    <h3>Uus veepump</h3>
+                    <p>Hind: <span class="price">250€</span></p>
+                </div>
+            </template>
+            <time datetime="2024-10-28">28. oktoober 2024</time>
+            <p><samp>Väljund: Pumba töö on edukalt lõppenud.</samp></p>
+            <small>NB! Järgige alati tootja juhiseid.</small>
+            <!-- Lisatud <menu> element -->
+            <menu>
+                <li><a href="#about">Veepumpade kohta</a></li>
+                <li><a href="#manufacturers">Tootjad</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </menu>
+        </section>
+    </main>
+    
+    <footer>
+        <address>
+            Kontakt: <a href="mailto:info@veepumbad.ee">info@veepumbad.ee</a><br>
+            Asukoht: Vee 5, 10123 Tallinn, Eesti
+        </address>
+        <p>&copy; 2024 Veepumbad OÜ</p>
+    </footer>
+    
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            alert('Nupp on klikitud!');
+        });
+    </script>
+</body>
+</html>
